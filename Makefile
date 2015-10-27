@@ -35,7 +35,7 @@ INCLUDES	:=	include
 APP_TITLE	:=	For-anyone-who-cheats-a-lot
 APP_DESCRIPTION	:=	Tool to skip Play Coin grinding
 APP_AUTHOR	:=	1hlixed (original by iamevn)
-ICON		:=	icon.png
+ICON		:=	icon48x48.png
 
 #---------------------------------------------------------------------------------
 # options for code generation
