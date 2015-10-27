@@ -52,13 +52,16 @@ int main()
 	consoleInit(GFX_TOP, GFX_LEFT);
 	unsigned int correctcoins = (todaysteps / 100);
 	bool slighted;
+	bool cheaty;
 	if (correctcoins > todaycoins) {
 		slighted = true;
 		printf("\x1b[0m\n\n You've taken \x1b[2m%d\x1b[0m steps but only earned\n \x1b[31m%d\x1b[0m coins for today! How would you like to\n have another \x1b[32m%d\x1b[0m coins to make up for it?\n\n [A] Sure!\n\n [START] It's okay, just take me back home.\n", (unsigned int)todaysteps, todaycoins, correctcoins - todaycoins);
 	} else {
 		slighted = false;
-		printf("\x1b[0m\n\n You've taken \x1b[2m%d\x1b[0m steps and earned\n \x1b[32m%d\x1b[0m coins for today.\n\n Come back later.\n\n Press [START] to exit.\n", (unsigned int)todaysteps, todaycoins);
+		cheaty = true;
+		printf("\x1b[0m\n\n You've taken \x1b[2m%d\x1b[0m steps and earned\n \x1b[32m%d\x1b[0m coins for today.\n\n Come back later.\n\n Press [START] to exit.\n\n\n", (unsigned int)todaysteps, todaycoins);
 	}
+	printf("Oh, and press Y to set the balance to 300 coins if you want to cheat.");
 
 	// Main loop
 	while (aptMainLoop()) {
@@ -77,6 +80,15 @@ int main()
 			} else {
 				printf("...Error!\n\n Press [START] to exit.");
 			}
+		}
+
+		if (cheaty && kDown & KEY_Y) {
+			printf("\n Setting coins to 300...");
+			setCoins(300);
+			setStoredCoins(300);
+			printf("...Applied!\n\n Press [START] to exit.");
+			slighted = false;
+			cheaty=false;
 		}
 	}
 
