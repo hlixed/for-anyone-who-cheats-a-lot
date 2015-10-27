@@ -32,6 +32,11 @@ SOURCES		:=	source
 DATA		:=	data
 INCLUDES	:=	include
 
+APP_TITLE	:=	For-anyone-who-cheats-a-lot
+APP_DESCRIPTION	:=	Tool to skip Play Coin grinding
+APP_AUTHOR	:=	1hlixed (original by iamevn)
+ICON		:=	icon.png
+
 #---------------------------------------------------------------------------------
 # options for code generation
 #---------------------------------------------------------------------------------
