@@ -1,5 +1,8 @@
-# For Anyone Who Walks A Lot
+# For Anyone Who Cheats A Lot
 
-You know how there's a 10 coin per day limit on Play Coins you earn for steps on 3DS? Well, I don't agree with it one bit. Run this little tool to get the Play Coins you should be earning. Never again will you need to experience seeing 2000+ steps counted and only get half the coins you *should* have gotten.
+You know how there's that puzzle mode in the mii plaza? The one that requires ridiculous numbers of play coins to even have a chance of filling out a single panel? Well, I don't agree with it one bit. Run this little tool to set your daily Play Coins directly to 300 automatically. Never again will you need to experience the horrible grindfest that is Puzzle Swap.
 
-[Builds on the release tab above](https://github.com/iamevn/for-anyone-who-walks-a-lot/releases)
+Building:
+After installing ctrulib and devArm and all that other good stuff, just run command-line 'make'. Copy the resulting .3dsx and .smdh files to a new folder named for-anyone-who-cheats-a-lot in the 3ds/ folder.
+
+Inspired by and forked from iamevn's [for-anyone-who-walks-a-lot](https://github.com/iamevn/for-anyone-who-walks-a-lot)
