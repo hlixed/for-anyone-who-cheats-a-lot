@@ -61,7 +61,7 @@ int main()
 		cheaty = true;
 		printf("\x1b[0m\n\n You've taken \x1b[2m%d\x1b[0m steps and earned\n \x1b[32m%d\x1b[0m coins for today.\n\n Come back later.\n\n Press [START] to exit.\n\n\n", (unsigned int)todaysteps, todaycoins);
 	}
-	printf("Oh, and press Y to set the balance to 300 coins if you want to cheat.");
+	printf("Oh, and press Y to set the balance to 300 coins if you want to cheat.\n\n");
 
 	// Main loop
 	while (aptMainLoop()) {
@@ -89,6 +89,7 @@ int main()
 			printf("...Applied!\n\n Press [START] to exit.");
 			slighted = false;
 			cheaty=false;
+			printf("\n\n\n");
 		}
 	}
 

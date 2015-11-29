@@ -6,3 +6,5 @@ Building:
 After installing ctrulib and devArm and all that other good stuff, just run command-line 'make'. Copy the resulting .3dsx and .smdh files to a new folder named for-anyone-who-cheats-a-lot in the 3ds/ folder.
 
 Inspired by and forked from iamevn's [for-anyone-who-walks-a-lot](https://github.com/iamevn/for-anyone-who-walks-a-lot)
+
+If you want there's also a prebuilt 1.0 release in the releases tab above.
